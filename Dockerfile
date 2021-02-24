@@ -2,7 +2,7 @@ FROM debian:buster
 
 RUN apt-get update -qy \
 && apt-get upgrade -qy \
-&& apt-get install -qy nginx default-mysql-server mariadb-server php7.3-fpm php7.3-mysql wget
+&& apt-get install -qy nginx default-mysql-server mariadb-server php7.3-fpm php7.3-mysql php-xml wget
 
 COPY ./srcs/* srcs_docker/
 
